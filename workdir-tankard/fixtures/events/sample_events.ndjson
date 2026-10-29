@@ -1,0 +1,16 @@
+{"event_id":"evt-0001","user_external_id":"u-alice","event_type":"view","product_id":101,"ts":"2026-03-18T10:00:01+03:00","surface":"home"}
+{"event_id":"evt-0002","user_external_id":"u-alice","event_type":"click","product_id":101,"ts":"2026-03-18T10:00:05+03:00","surface":"home"}
+{"event_id":"evt-0003","user_external_id":"u-alice","event_type":"view","product_id":201,"ts":"2026-03-18T10:01:00+03:00","surface":"home"}
+{"event_id":"evt-0004","user_external_id":"u-bob","event_type":"view","product_id":301,"ts":"2026-03-18T10:02:00+03:00","surface":"pdp"}
+{"event_id":"evt-0005","user_external_id":"u-bob","event_type":"add_to_cart","product_id":301,"ts":"2026-03-18T10:02:20+03:00","surface":"pdp"}
+{"event_id":"evt-0006","user_external_id":"u-bob","event_type":"purchase","product_id":301,"ts":"2026-03-18T10:05:00+03:00","surface":"cart"}
+{"event_id":"evt-0007","user_external_id":"u-carol","event_type":"view","product_id":401,"ts":"2026-03-18T11:00:00+03:00","surface":"home"}
+{"event_id":"evt-0008","user_external_id":"u-dave","event_type":"view","product_id":102,"ts":"2026-03-18T11:10:00+03:00","surface":"home"}
+{"event_id":"evt-0009","user_external_id":"u-dave","event_type":"click","product_id":102,"ts":"2026-03-18T11:10:04+03:00","surface":"home"}
+{"event_id":"evt-0010","user_external_id":"u-erin","event_type":"view","product_id":302,"ts":"2026-03-18T12:00:00+03:00","surface":"email"}
+{"event_id":"evt-0002","user_external_id":"u-alice","event_type":"click","product_id":101,"ts":"2026-03-18T10:00:05+03:00","surface":"home"}
+{"event_id":"evt-0011","user_external_id":"u-alice","event_type":"purchase","product_id":201,"ts":"2026-03-18T12:30:00+03:00","surface":"cart"}
+{"event_id":"evt-0012","user_external_id":"u-bob","event_type":"view","product_id":303,"ts":"2026-03-18T13:00:00+03:00","surface":"home"}
+{"event_id":"evt-0013","user_external_id":"u-carol","event_type":"click","product_id":401,"ts":"2026-03-18T13:05:00+03:00","surface":"home"}
+{"event_id":"evt-0014","user_external_id":"u-dave","event_type":"add_to_cart","product_id":202,"ts":"2026-03-18T14:00:00+03:00","surface":"pdp"}
+{"event_id":"evt-0015","user_external_id":"u-erin","event_type":"purchase","product_id":302,"ts":"2026-03-18T15:00:00+03:00","surface":"cart"}

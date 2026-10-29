@@ -1,0 +1,68 @@
+env: dev
+
+http:
+  host: 0.0.0.0
+  port: 8081
+  read_timeout: 5s
+  write_timeout: 10s
+  idle_timeout: 60s
+
+postgres:
+  host: localhost
+  port: 5432
+  database: tankard
+  user: kishman
+  password: kishman
+  ssl_mode: disable
+
+  max_open_conns: 20
+  max_idle_conns: 10
+  max_conn_lifetime: 30m
+  max_conn_idle_time: 10m
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+clickhouse:
+  host: localhost
+  port: 8123
+  database: tankard_analytics
+  user: tankard
+  password: tankard
+
+kafka:
+  brokers:
+    - localhost:9092
+  topic: tankard.user-events
+  dlq_topic: tankard.user-events.dlq
+  group_id: tankard-profile-updater
+  max_attempts: 3
+  base_retry_delay: 10ms
+  max_retry_delay: 100ms
+
+retry:
+  attempts: 3
+  delay: 100ms
+  backoff: 2.0
+
+recommendations:
+  budget: 150ms
+  default_limit: 5
+  max_limit: 50
+  ml_timeout: 120ms
+  personal_cache_ttl: 60s
+  fallback_cache_ttl: 300s
+  stale_cache_ttl: 600s
+  negative_cache_ttl: 5s
+  exclude_low_margin: false
+
+ml:
+  url: http://127.0.0.1:8081/ml/rank
+  slow_delay: 1s
+
+logging:
+  level: debug
+  format: json
